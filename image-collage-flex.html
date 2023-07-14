@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Collage</title>
+    <style>
+        img
+        {
+            height: 100%;
+            width: 100%;
+        }
+
+        .img-container  
+        {
+            height: 400px;
+            width: 100%;
+            border: 1px solid red;
+        }
+        .row-2 , .row-3
+        {
+            display: flex;
+            gap: 5px;
+            margin: 5px 0;
+        }
+        /* .row-2 , .row-3 > div
+        {
+            flex: 1;
+        } */
+        .dual-image-container
+        {
+            height: 49%;
+        }
+        .four-img-container
+        {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+        .four-img-container > div
+        {
+            height: 100%;
+        }
+        /* .four-img-container > img
+        {
+            flex: 1;
+        } */
+        /* .lion 
+        {
+            height: 50%;
+            width: 48.5%;
+            border: 1px solid red;
+        }
+        .lion img
+        {
+            height: 100%;
+            width: 100%;
+        } */
+
+
+
+        @media screen and (max-width: 576px) 
+        {
+            .four-img-container, .row-2 , .row-3
+            {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+
+    <Section class="row-1">
+        <div class="img-container">
+            <img src="images/A.jpg">
+        </div>
+    </Section>
+    <section class="row-2">
+        <div class="img-container">
+            <img src="images/B.jpg" alt="">
+        </div>
+        <div class="img-container">
+            <img src="images/C.jpg" alt="">
+        </div>
+        <div class="img-container">
+            <div class="dual-image-container">
+                <img src="images/D.jpg" alt="">
+                <img src="images/E.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="row-3">
+        <div class="img-container">
+            <img src="images/F.jpg" alt="">
+        </div>
+        <div class="img-container">
+            <div class="four-img-container">
+                <div>
+                    <img src="images/G.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/G.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/G.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/G.jpg" alt="">
+                </div>
+                <!-- <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt="">
+                <img src="images/G.jpg" alt=""> -->
+                
+                <!-- <div class="lion">
+                    <img src="images/G.jpg" alt="">
+                </div>
+                <div class="lion">
+                    <img src="images/G.jpg" alt="">
+                </div>
+                <div class="lion">
+                    <img src="images/G.jpg" alt="">
+                </div> -->
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="images/H.jpg" alt="">
+        </div>
+    </section>
+
+
+    <main>
+
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>
